@@ -17,4 +17,4 @@ Via the spi channel i presume, make sure to check the uhhhh pwm!!!
 
 ## External hardware
 
-
+The Spi calls
