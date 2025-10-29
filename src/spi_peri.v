@@ -9,6 +9,6 @@ module spi_peri (
     input  wire [7:0] en_reg_pwm_7_0,
     input  wire [7:0] en_reg_pwm_15_8,
     input  wire [7:0] pwm_duty_cycle,
-)
+);
 
 endmodule
