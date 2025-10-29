@@ -24,6 +24,17 @@ module tt_um_onboarding_Ore (
   wire [7:0] en_reg_pwm_7_0;
   wire [7:0] en_reg_pwm_15_8;
   wire [7:0] pwm_duty_cycle;
+  
+  spi_peri spi_peri_inst (
+    .copi(un_in[1]),
+    .nCS(un_in[2]),
+    .SCLK(un_in[0]),
+    .en_reg_out_7_0(en_reg_out_7_0),
+    .en_reg_out_15_8(en_reg_out_15_8),
+    .en_reg_pwm_7_0(en_reg_pwm_7_0),
+    .en_reg_pwm_15_8(en_reg_pwm_15_8),
+    .pwm_duty_cycle(pwn_duty_cycle)
+  );
 
   pwm_peripheral pwm_peripheral_inst (
     .clk(clk),
